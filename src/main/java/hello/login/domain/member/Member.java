@@ -11,14 +11,16 @@ public class Member {
 
     @NotEmpty
     private String loginId; // 로그인 ID
-    @NotEmpty
-    private String name;
+
     @NotEmpty
     private String password;
 
-    public Member(String loginId, String name, String password) {
+    @NotEmpty
+    private String name;
+
+    public Member(String loginId, String password, String name) {
         this.loginId = loginId;
-        this.name = name;
         this.password = password;
+        this.name = name;
     }
 }
